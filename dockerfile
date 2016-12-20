@@ -32,7 +32,7 @@ EXPOSE 8084
 
 WORKDIR /root/w6-access
 RUN \
-    mvn package && \
+    mvn -q package && \
     rm -r src && \
     rm pom.xml
 
